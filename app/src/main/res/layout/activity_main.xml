@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/ll_title"
+        />
+
+    <com.example.camera2SampleApp.AutofitSurfaceView
+        android:id="@+id/surface_view"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/ll_title"
+        android:layout_marginTop="1dp" />
+
+    <ImageButton
+        android:id="@+id/ib_takephoto"
+        android:layout_width="58dp"
+        android:layout_height="59dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/ic_launcher_camera" />
+
+    <ImageView
+        android:id="@+id/iv_photos"
+        android:layout_width="77dp"
+        android:layout_height="78dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="263dp"
+        android:layout_marginBottom="16dp"
+        android:background="#fff"
+        android:scaleType="centerCrop" />
+
+    <ImageButton
+        android:id="@+id/ib_camera_flip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/ic_camera_rear" />
+
+    <ImageButton
+        android:id="@+id/ib_flash_control"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/ic_flash_auto" />
+
+    <ImageButton
+        android:id="@+id/btn_startRecord"
+        android:layout_width="75dp"
+        android:layout_height="62dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="49dp"
+        android:layout_marginRight="120dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/ic_video_record" />
+
+    <ImageButton
+        android:id="@+id/video_flash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_flash_off" />
+
+    <Spinner
+        android:id="@+id/effect_spinner"
+        android:layout_width="56dp"
+        android:layout_height="28dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+        android:background="#85F8F8F8" />
+
+    <Chronometer
+        android:id="@+id/video_chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:layout_marginTop="50dp"
+        android:textColor="#EA0909"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>
